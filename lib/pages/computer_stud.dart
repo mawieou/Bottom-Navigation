@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
-class HomePage extends StatelessWidget{
+class ComputerStud extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('Global Reciprocal College'),
+        title: Text('College of Computer Studies'),
         backgroundColor: Colors.blueGrey,
         centerTitle: true,
       ),
@@ -14,25 +13,29 @@ class HomePage extends StatelessWidget{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.network('assets/grc.jpg',
+              Image.network('assets/ccs.jpg',
                 width: 600,
                 height: 500,
               ),
               const SizedBox(height: 25),
               const Text(
-                  'MISSION',
-                  style: TextStyle(fontSize: 25),
+                  'College of Computer Studies',
+                  style: TextStyle(fontSize: 25)
               ),
               const Text(
-                'GRC is creating a culture for successful, socially responsible, morally upright skilled workers and highly competent professionals through values-based quality education.',
-                style: TextStyle(fontSize: 15),
+                'MISSION',
+                style: TextStyle(fontSize: 25),
+              ),
+              const Text(
+                  'The College of Computer Studies (CCS) develops a society for competitive IT professionals through values-based quality education guided by the principles and best practices of the IT Program in order to promote nation building.',
+                  style: TextStyle(fontSize: 15)
               ),
               const Text(
                 'VISION',
                 style: TextStyle(fontSize: 25),
               ),
               const Text(
-                'A global community of excellent individuals with values.',
+                'GRC-College of Computer Studies envisions producing quality IT professionals with values. ',
                 style: TextStyle(fontSize: 15),
               ),
             ],

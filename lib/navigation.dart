@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
-import 'pages/about_page.dart';
-import 'pages/projects_page.dart';
-import 'pages/gallery_page.dart';
-import 'pages/contact_page.dart';
+import 'pages/business_ad.dart';
+import 'pages/computer_stud.dart';
+import 'pages/college_acc.dart';
+import 'pages/college_educ.dart';
 
 class MainNavigationPage extends StatefulWidget {
   @override
@@ -22,11 +22,11 @@ class _MainNavigationPageState extends State {
 
 
           children: [
-            AboutPage(),
-            ProjectsPage(),
+            BusinessAd(),
+            ComputerStud(),
             HomePage(),
-            GalleryPage(),
-            ContactPage(),
+            CollegeAcc(),
+            CollegeEduc(),
           ],
           onPageChanged: (index) {
             setState(() {
@@ -45,11 +45,11 @@ class _MainNavigationPageState extends State {
             backgroundColor: Colors.white,
 
             items: [
-              BottomNavigationBarItem(icon: Icon(Icons.person), label: 'About Me'),
-              BottomNavigationBarItem(icon: Icon(Icons.work), label: 'Projects'),
+              BottomNavigationBarItem(icon: Icon(Icons.work), label: 'College of Business Administration'),
+              BottomNavigationBarItem(icon: Icon(Icons.computer), label: 'College of Computer Studies'),
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-              BottomNavigationBarItem(icon: Icon(Icons.photo_library), label: 'Gallery'),
-              BottomNavigationBarItem(icon: Icon(Icons.contact_mail), label: 'Contact'),
+              BottomNavigationBarItem(icon: Icon(Icons.calculate), label: 'College of Accountancy'),
+              BottomNavigationBarItem(icon: Icon(Icons.book), label: 'College of Education'),
             ],
         ),
       );
